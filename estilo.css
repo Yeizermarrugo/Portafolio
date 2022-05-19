@@ -1,0 +1,480 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(208, 205, 252);
+}
+
+.encabezado, .contenido, .contenido-lateral, .pie-pagina{
+    padding: 20px 20px;
+}
+
+.contenido, .contenido-lateral, .pie-pagina{
+    float: left;
+    box-sizing: border-box;
+}
+
+.encabezado{
+    background: url(img/programacion.png);
+    height: 200px;
+    width: 100%;
+   
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    color: white;
+    margin-top: 200px;
+}
+.navbar a:hover{
+    color: black;
+}
+
+
+.contenido{
+    width: 60%;
+}
+.post{
+    height: 100%;
+    width: 100%;
+    margin-left: 60%;
+    text-align: justify;
+}
+.post1 {
+    margin-right: 0px;
+    width: 45%;
+    margin-left: 60%;
+
+}
+.post2{
+    height: 100%;
+    width: 100%;
+    margin-left: 60%;
+    text-align: justify;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin-top: 10%;
+    padding-bottom: 0px;
+    margin-right: 0px;
+    }
+
+
+.slider ul {
+    display: flex;
+    animation: cambio 10s infinite;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+
+@keyframes cambio {
+    
+     0%{margin-right: -350%;}
+     100%{margin-left: -300%;}
+     
+}
+
+
+.card{
+  height: 200px;
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 25%;
+  background: grey;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: black;
+  box-shadow: 0 70px 63px -60px #000000;
+  justify-content: center;
+  align-items: center;
+}
+.card0{
+  background: url('img/Yo.jpg') center center no-repeat;
+  background-size: 200px;
+}
+
+  .card0:hover{
+    background: url('img/Yo.jpg') left center no-repeat;
+    background-size: 400px;
+  }
+
+.contenido-lateral{
+    width: 40%;
+    height: 100%;
+    /* background-color: ; */
+    text-align: justify;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.title {
+    padding-left: 30%;
+    padding-right: 30%;
+    width: 40%;
+}
+
+.cv{
+    width: 16%;
+    margin-left: 42%;
+    margin-top: 10px;
+    background-color: black;
+}
+.post{
+    height: 100px;
+    margin-bottom: 10px;
+}
+.post2 > h2:nth-child(1) {
+    margin-bottom: 10px;
+    margin-left: 30%;
+    }
+    
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+img{
+    display: grid;
+    
+}
+
+.post3 {
+    margin-left: 50%;
+}
+.post3 > h2:nth-child(1) {
+    margin-left: 30%;
+}
+
+.post3 > h2:nth-child(3) {
+    margin-left: 29%;
+    margin-left: 55%;
+    margin-top: 24px;
+    margin-bottom: 9px;
+    }
+
+.pie-pagina{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    text-align: justify;
+}
+
+.caja-fija{
+    position: fixed;
+    bottom: 15%;
+    right: 5px;
+}
+
+
+@media screen and (min-width: 780px) and (max-width:1024px) {
+    
+    .encabezado{
+        height: 100%;
+        background: url(img/programacion.png);
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        color: white;
+        margin-top: 200px;
+    }
+    .navbar a:hover{
+        color: black;
+    }
+    
+    .contenido, .contenido-lateral{
+        width:50%;
+    }
+    .post{
+        height: 100%;
+        width: 100%;
+        margin-left: 60%;
+        text-align: justify;
+    }
+    .post1{
+        height: 100%;
+        margin-bottom: 10px;
+    }
+    .post2{
+        height: 100%;
+        width: 100%;
+        margin-left: 60%;
+        text-align: justify;
+    }
+
+
+    .pie-pagina{
+        width: 100%;
+        background-color: black;
+        height: 50px;
+    }
+    .title {
+        padding-left: 30%;
+        padding-right: 30%;
+        width: 40%;
+    }
+    .cv{
+        width: 30%;
+        margin-left: 42%;
+        margin-top: 10px;
+        background-color: black;
+    }
+
+    .card {
+        margin-left: 30%;
+    }
+
+    .card0{
+        background: url('img/Yo.jpg') center center no-repeat;
+        background-size: 200px;
+      }
+      
+        .card0:hover{
+          background: url('img/Yo.jpg') left center no-repeat;
+          background-size: 400px;
+        }
+
+    .pie-pagina{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        background-color: black;
+        color: white;
+        justify-content: center;
+        text-align: justify;
+    }
+    .caja-fija{
+        position: fixed;
+        bottom: 15%;
+        right: 5px;
+    }
+    
+}
+
+@media screen and (min-width: 480px) and (max-width:780px) {
+    .encabezado{
+        width: 94%;
+        background: url(img/programacion.png);
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        color: white;
+        margin-top: 200px;
+    }
+    .navbar a:hover{
+        color: black;
+    }
+    
+    .contenido, .contenido-lateral{
+        width:100%;
+        height:100%;
+    }
+    .post{
+        height: 100%;
+        width: 100%;
+        margin-left: 60%;
+        text-align: justify;
+    }
+    .post1{
+        margin-left: 25%;
+        margin-right: 15%;
+    }
+    .post2{
+        height: 100%;
+        width: 55%;
+        margin-left: 25%;
+        text-align: justify;
+    }
+    .post3{
+        height: 100%;
+        width: 100%;
+        margin-left: -10px;
+        text-align: justify;
+    }
+
+    .title {
+        padding-left: 30%;
+        padding-right: 30%;
+        padding-bottom: 10px;
+        width: 40%;
+    }
+
+    .cv{
+        width: 13%;
+        margin-left: 45%;
+        margin-top: 10px;
+        background-color: black;
+    }
+
+    .card {
+        margin-left: 30%;
+    }
+
+    .card0{
+        background: url('img/Yo.jpg') center center no-repeat;
+        background-size: 200px;
+      }
+      
+        .card0:hover{
+          background: url('img/Yo.jpg') left center no-repeat;
+          background-size: 400px;
+        }
+
+    .post2 > h2:nth-child(1) {
+        margin-bottom: 10px;
+        margin-left: 10%;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 10px;
+    }
+    img{
+        display: grid;
+        
+    }
+    .pie-pagina{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        background-color: black;
+        color: white;
+        justify-content: center;
+        text-align: justify;
+    }
+    .caja-fija{
+        position: fixed;
+        bottom: 12%;
+        right: 5px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        height: 100%;
+        width: 90%;
+        margin: 0;
+        background-color: rgb(208, 205, 252);
+    }
+    .encabezado{
+        height: 100%;
+        background: url(img/programacion.png);
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        color: white;
+        padding: 10px;
+        margin-top: 100px;
+    }
+    .navbar a:hover{
+        color: black;
+    }
+    
+    
+    .contenido, .contenido-lateral{
+        width: 110%;
+        height: 100%;
+    }
+
+    .post{
+    height: 100%;
+    width: 100%;
+    margin-left: 60%;
+    text-align: justify;
+    }
+    .post1{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    }
+    .post2{
+        margin-left: -20px;
+    }
+    .post3 {
+        margin-left: -20px;
+    }
+    .title {
+        font-size: 20px;
+        padding-left: 30%;
+        padding-right: 30%;
+        padding-bottom: 10px;
+        width: 50%;
+    }
+    .cv{
+        width: 23%;
+        margin-left: 40%;
+        margin-top: 10px;
+        background-color: black;
+    }
+
+    .card {
+        margin-left: 20%;
+    }
+
+    .card0{
+        background: url('img/Yo.jpg') center center no-repeat;
+        background-size: 200px;
+      }
+      
+        .card0:hover{
+          background: url('img/Yo.jpg') left center no-repeat;
+          background-size: 400px;
+        }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 10px;
+    }
+    img{
+        display: grid;
+        
+    }
+
+    .pie-pagina{
+        width: 111%;
+        height: 100%;
+        background-color: black;
+        color: white;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    .caja-fija{
+        position: fixed;
+        bottom: 10%;
+        right: 5px;
+    }
+    
+}
